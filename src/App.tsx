@@ -4,7 +4,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Testimonials from './pages/Testimonials';
-import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 import { ROUTES } from './utils/constants';
 
 const App: FC = () => {
@@ -15,7 +15,7 @@ const App: FC = () => {
           <Route path={ROUTES.HOME} element={<Home />} />
           <Route path={ROUTES.MENU} element={<Menu />} />
           <Route path={ROUTES.TESTIMONIALS} element={<Testimonials />} />
-          <Route path={ROUTES.CONTACT} element={<Contact />} />
+          <Route path={ROUTES.CONTACT} element={<Footer />} />
         </Routes>
       </Layout>
     </Router>
