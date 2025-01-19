@@ -10,7 +10,7 @@ const Navbar = () => {
       const homeSectionHeight = homeSection?.offsetHeight || 0;
       const currentScrollY = window.scrollY;
 
-      // Oculta navbar quando passar da seção home e estiver scrollando para baixo
+
       setIsVisible(currentScrollY < homeSectionHeight || currentScrollY < lastScrollY);
       setLastScrollY(currentScrollY);
     };
