@@ -15,6 +15,19 @@ const menuItems = [
     price: "R$ 25,00/unidade"
   },
   {
+    title: "Pão Recheado",
+    image: "/assets/images/img-paorecheado.jpg",
+    description: "Pão artesanal recheado, feito com ingredientes selecionados e assado na hora. Cada opção de recheio traz uma combinação única de sabores.",
+    price: "R$ 35,00/unidade",
+    options: [
+      "Frango com Catupiry",
+      "Calabresa com Queijo",
+      "4 Queijos (Mussarela, Parmesão, Provolone e Catupiry)",
+      "Presunto e Queijo",
+      "Bacon com Queijo"
+    ]
+  },
+  {
     title: "Pudim",
     image: "/assets/images/img-pudim.jpg",
     description: "Pudim cremoso feito com leite condensado de primeira qualidade, ovos frescos e calda de caramelo caseira.",
@@ -60,7 +73,7 @@ const Menu = () => {
         <div className="relative">
           <div className="absolute h-full md:h-[75%] w-full bg-orange-600 bottom-0 -z-10 left-1/2 transform -translate-x-1/2 gap-2" />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-32 p-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 p-8">
             {menuItems.map((item, index) => (
               <div 
                 key={index} 
@@ -71,12 +84,14 @@ const Menu = () => {
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-white text-3xl font-semibold mb-2">{item.title}</h3>
+                <div className="w-full aspect-square mb-4 overflow-hidden rounded-lg">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="text-white text-3xl font-semibold mb-2 text-center">{item.title}</h3>
                 <button 
                   onClick={() => setSelectedProduct(index)}
                   className="bg-[#B4540C] text-white px-5 py-2 rounded-md hover:bg-[#A34A0B] transition-colors inline-flex items-center"

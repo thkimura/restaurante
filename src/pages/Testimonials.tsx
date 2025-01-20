@@ -12,25 +12,29 @@ const testimonials = [
     quote: "Vou pedir de novo!",
     text: "O nhoque estava simplesmente divino!",
     author: "Marina K.",
-    image: `/src/assets/images/avatarmarinak.jpg`
+    image: `/src/assets/images/avatarmarinak.jpg`,
+    rating: 5
   },
   {
     quote: "Uma delícia.",
     text: "O nhoque de batata mais saboroso que já experimentei! A massa é macia e o molho é simplesmente divino.",
     author: "Matheus F.",
-    image: `/src/assets/images/avatarmatheusf.jpg`
+    image: `/src/assets/images/avatarmatheusf.jpg`,
+    rating: 5
   },
   {
     quote: "Pao caseiro delicioso!",
     text: "Este pão caseiro é uma delícia! A casca é crocante e a miolo é macio e saboroso. É perfeito para um café da manhã ou lanche.",
     author: "Beatriz M.",
-    image: `/src/assets/images/avatarbeatriz.jpg`
+    image: `/src/assets/images/avatarbeatriz.jpg`,
+    rating: 5
   },
   {
     quote: "Pudim de Leite Condensado com Caramelo",
     text: "Este pudim de leite condensado com caramelo é uma sobremesa extraordinaria! É doce na medida certa, cremoso e tem uma textura perfeita.",
     author: "Thalles K.",
-    image: `/src/assets/images/avatarthallesk.jpg`
+    image: `/src/assets/images/avatarthallesk.jpg`,
+    rating: 5
   }
 ];
 
@@ -69,6 +73,7 @@ const Testimonials = () => {
                   text={testimonial.text}
                   author={testimonial.author}
                   image={testimonial.image}
+                  rating={testimonial.rating}
                 />
               </SwiperSlide>
             ))}
