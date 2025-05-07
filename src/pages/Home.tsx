@@ -46,8 +46,7 @@ const Home = () => {
                   alt="Qualidade" 
                   className="w-128 h-128 mx-auto mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Comida de qualidade</h3>
-                <p className="text-gray-600">Ingredientes selecionados para seu prazer</p>
+                <h2 className="text-4xl font-roboto font-light mb-2 text-gray-800">Comida de qualidade</h2>
               </div>
               <div className="text-center animate-slide-up-delay-1">
                 <img 
@@ -55,8 +54,7 @@ const Home = () => {
                   alt="Sabor" 
                   className="w-128 h-128 mx-auto mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Sabor Incomparável</h3>
-                <p className="text-gray-600">Receitas exclusivas e deliciosas</p>
+                <h2 className="text-4xl font-roboto font-light mb-2 text-gray-800">Sabor Incomparável</h2>
               </div>
               <div className="text-center animate-slide-up-delay-2">
                 <img 
@@ -64,8 +62,7 @@ const Home = () => {
                   alt="Entrega" 
                   className="w-128 h-128 mx-auto mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Entrega pontual</h3>
-                <p className="text-gray-600">Seu pedido no horário combinado</p>
+                <h2 className="text-4xl font-roboto font-light mb-2 text-gray-800">Entrega pontual</h2>
               </div>
             </div>
           </div>

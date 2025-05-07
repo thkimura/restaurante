@@ -8,8 +8,11 @@ export default {
     extend: {
       colors: {
         'primary': '#CD5C08',
-      }
-    }
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      }, 
+    },
   },
   plugins: [],
-} 
+}
